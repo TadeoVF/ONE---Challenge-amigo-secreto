@@ -10,13 +10,14 @@ const amigoFinal = document.getElementById("resultado");
 //funcion para elejir y mostrar al amigo aleatorio
 function sortearAmigo(){
 
-    //utiliza un numero random basado en el array, borra la lista (puro estetico) y muestra al elejido
+    //utiliza un numero random basado en el array, borra la lista y muestra al elejido
     if (amigos.length > 0){
 
-        let indice = Math.floor(Math.random()*amigos.length) + 1;
+        let indice = Math.floor(Math.random()*amigos.length);
         let amigoElejido = amigos[indice];
         listaAmigos.innerHTML = '';
         amigoFinal.innerHTML = amigoElejido;
+        amigos = [];
 
     } else {
 
