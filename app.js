@@ -44,6 +44,7 @@ function actualizarLista(){
 //Funcion para agregar amigos a la lista al presionar el boton, de estar vacio envia alerta
 function agregarAmigo(){
 
+    amigoFinal.innerHTML = '';
     nombreActual = inputUsuario.value;
     console.log(nombreActual);
 
